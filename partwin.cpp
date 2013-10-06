@@ -94,26 +94,28 @@ void PartWin::setupPart() {
 	// make part window the main widget
 	setCentralWidget(m_part->widget());
 	
-	setupActions();
+//	setupActions();
 
-	setupGUI(ToolBar | Keys | Save);
-	toolBar("okularToolBar")->setToolButtonStyle(Qt::ToolButtonIconOnly);
+	setupGUI();
+	//toolBar("okularToolBar")->setToolButtonStyle(Qt::ToolButtonIconOnly);
 	
 	// integrate the part's GUI with the shell's
 	createGUI(m_part);
 	
-	toolBar("okularToolBar")->insertAction(toolBar("okularToolBar")->actions().front(), this->actionCollection()->action("file_print"));
-	menuBar()->clear();
+	//toolBar("okularToolBar")->insertAction(toolBar("okularToolBar")->actions().front(), this->actionCollection()->action("file_print"));
+	//menuBar()->clear();
 	
-	toolBar("okularToolBar")->show();
+//	toolBar("okularToolBar")->show();
 	
 }
 
+/*
 void PartWin::setupActions() {
   // make a print action, as we don't get this by
   // default in the okular kpart
   m_printAction = KStandardAction::print(m_part, SLOT( slotPrint() ), actionCollection());
 }
+*/
 
 PartWin::~PartWin()
 {

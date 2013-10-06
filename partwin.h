@@ -76,7 +76,7 @@ protected:
 
 
 private:
-    void setupActions();
+//    void setupActions();
     
     void setupPart();
     void setupProgressBar();
@@ -91,7 +91,7 @@ private:
     QString lastConfUrl;
     Reason lastConfReason;
 
-    KAction* m_printAction;
+//    KAction* m_printAction;
     bool m_guiInitialized;
     
     QList<QString> m_filesToDelete;
